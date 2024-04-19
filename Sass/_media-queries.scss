@@ -1,0 +1,563 @@
+/* Media Queries */
+@media (max-width: 767px) {
+  /* Header */
+  #header {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  #header-menu {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 72px;
+    width: 100%;
+    height: 100%;
+    background-color: #e00000;
+    display: none;
+    #menu-main_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      height: 80%;
+    }
+    li {
+      padding-bottom: 20px;
+    }
+    a {
+      font-family: SpaceMono;
+      font-size: 44px;
+      color: white;
+    }
+  }
+
+  .burger__btn {
+    width: 30px;
+    height: 19px;
+    position: absolute;
+    top: 27px;
+    right: 39px;
+    z-index: 100;
+    span {
+      pointer-events: none;
+    }
+    .line1 {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: black;
+      display: block;
+    }
+    .line2 {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 7px;
+      background-color: black;
+      display: block;
+    }
+    .line3 {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 14px;
+      background-color: black;
+      display: block;
+    }
+  }
+
+  .active .line1 {
+    transform: translateY(7px) rotate(45deg);
+    transition: 0.4s ease-in-out;
+  }
+  .active .line2 {
+    opacity: 0;
+  }
+
+  .active .line3 {
+    transform: translateY(-7px) rotate(-45deg);
+    transition: 0.4s ease-in-out;
+  }
+
+  #header-menu.active {
+    display: block;
+  }
+
+  /* Hero front page */
+  #hero {
+    margin-bottom: 25px;
+    .hero_photo {
+      width: 100%;
+      max-height: 300px;
+      padding-top: 72px;
+      h1 {
+        font-size: 2rem !important;
+        -webkit-text-stroke: 1px white !important;
+        -webkit-text-fill-color: transparent !important;
+      }
+    }
+  }
+
+  .site-logo {
+    margin-left: 40px;
+    img {
+      width: 140px;
+      height: 10px;
+    }
+  }
+
+  /* Lightbox */
+  .lightbox-content {
+    margin: 10px 5px 0 5px;
+  }
+
+  .lightbox-content img {
+    max-width: 100%;
+    height: 50vh;
+    object-fit: scale-down;
+  }
+
+  .prev-photo,
+  .next-photo {
+    position: fixed;
+    cursor: pointer;
+    top: 50%;
+    right: 5%;
+  }
+
+  .prev-photo {
+    right: auto;
+    left: 5%;
+  }
+
+  .prev-text,
+  .next-text {
+    display: none;
+  }
+
+  .prev-text {
+    right: auto;
+    left: 35%;
+  }
+
+  .close-lightbox {
+    top: 20%;
+  }
+
+  /* Dropdown menu */
+  #filters,
+  .filter-group1,
+  .filter-group2 {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  /* load-more button front page */
+  #load-more-button {
+    margin-top: 74px;
+  }
+
+  /* Footer */
+  .menu-footer_menu-container {
+    max-width: 768px;
+    width: 100%;
+    #menu-footer_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding-top: 47px;
+      padding-bottom: 47px;
+    }
+    .menu-footer li a {
+      margin: 0;
+    }
+  }
+
+  /* Page "Vie Privée" */
+  .page-title {
+    padding-top: 72px;
+  }
+
+  /* Single-photo custom post */
+  .single_photo {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .single_img {
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    img {
+      height: 50%;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+  }
+
+  .single_content {
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+    h2 {
+      font-size: 46px;
+      margin-top: 14px;
+    }
+    .single_info {
+      width: 70%;
+    }
+
+    .single_title {
+      width: 70%;
+      max-width: none;
+    }
+  }
+
+  .single_contact {
+    flex-direction: column;
+    align-items: center;
+    height: 131px;
+    margin-left: 0;
+    margin-right: 0;
+    p {
+      margin-left: -25px;
+      margin-top: 20px;
+    }
+  }
+
+  .btn_contact {
+    width: 263px;
+    margin-left: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .related_text {
+    text-align: center;
+  }
+
+  .photo_block h3 {
+    margin: 31px 0 0 0;
+  }
+
+  .photo_related {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Header */
+  #header {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  #header-menu {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 72px;
+    width: 100%;
+    height: 100%;
+    background-color: #e00000;
+    display: none;
+    #menu-main_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      height: 80%;
+    }
+    li {
+      padding-bottom: 20px;
+    }
+    a {
+      font-family: SpaceMono;
+      font-size: 44px;
+      color: white;
+    }
+  }
+
+  .burger__btn {
+    width: 30px;
+    height: 19px;
+    position: absolute;
+    top: 27px;
+    right: 39px;
+    z-index: 100;
+    span {
+      pointer-events: none;
+    }
+    .line1 {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: black;
+      display: block;
+    }
+    .line2 {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 7px;
+      background-color: black;
+      display: block;
+    }
+    .line3 {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 14px;
+      background-color: black;
+      display: block;
+    }
+  }
+
+  .active .line1 {
+    transform: translateY(7px) rotate(45deg);
+    transition: 0.4s ease-in-out;
+  }
+  .active .line2 {
+    opacity: 0;
+  }
+
+  .active .line3 {
+    transform: translateY(-7px) rotate(-45deg);
+    transition: 0.4s ease-in-out;
+  }
+
+  #header-menu.active {
+    display: block;
+  }
+
+  /* Logo */
+  .site-logo {
+    margin-left: 65px;
+  }
+
+  /* hero */
+  #hero {
+    .hero_photo {
+      padding-top: 72px;
+    }
+  }
+
+  /* Dropdown menu */
+  #filters,
+  .filter-group1,
+  .filter-group2 {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  /* Footer */
+  .menu-footer_menu-container {
+    max-width: 1024px;
+    width: 100%;
+    #menu-footer_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding-top: 47px;
+      padding-bottom: 47px;
+    }
+    .menu-footer li a {
+      margin: 0;
+    }
+  }
+
+  /* Page "Vie Privée" */
+  .page-title {
+    padding-top: 72px;
+  }
+
+  /* Lightbox */
+  .lightbox-content img {
+    max-width: 100%;
+    height: 60vh;
+  }
+
+  .prev-photo,
+  .next-photo {
+    position: fixed;
+    cursor: pointer;
+    top: 90%;
+    right: 31%;
+  }
+
+  .prev-photo {
+    right: auto;
+    left: 31%;
+  }
+
+  .prev-text,
+  .next-text {
+    position: fixed;
+    top: 88.3%;
+    right: 35%;
+    font-family: SpaceMono;
+    font-size: 12px;
+    color: white;
+  }
+
+  .prev-text {
+    right: auto;
+    left: 35%;
+  }
+
+  .close-lightbox {
+    top: 10%;
+  }
+
+  /* Single-photo custom post */
+  .single_photo {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .single_img {
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    img {
+      margin: 0 auto;
+      height: 80vh;
+      padding-top: 100px;
+    }
+  }
+
+  .single_content {
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+    h2 {
+      font-size: 46px;
+      margin-top: 14px;
+    }
+    .single_info {
+      width: 70%;
+    }
+
+    .single_title {
+      width: 70%;
+      max-width: none;
+    }
+  }
+
+  .single_contact {
+    flex-direction: column;
+    width: 100%;
+    height: 131px;
+    margin-left: 0;
+    margin-right: 0;
+    p {
+      margin-left: 15%;
+      margin-top: 20px;
+    }
+  }
+
+  .btn_contact {
+    width: 263px;
+    margin-left: 0;
+    margin: 0 0 20px 15%;
+  }
+
+  .related_text {
+    text-align: center;
+  }
+
+  .photo_related {
+    margin-bottom: 0;
+  }
+
+  .slider {
+    position: absolute;
+    margin-left: 72%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Dropdown menu */
+  #filters {
+    justify-content: space-around;
+  }
+
+  /* Lightbox */
+  .lightbox-content img {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .prev-photo,
+  .next-photo {
+    position: fixed;
+    cursor: pointer;
+    top: 90%;
+    right: 31%;
+  }
+
+  .prev-photo {
+    right: auto;
+    left: 31%;
+  }
+
+  .prev-text,
+  .next-text {
+    position: fixed;
+    top: 88.3%;
+    right: 35%;
+    font-family: SpaceMono;
+    font-size: 12px;
+    color: white;
+  }
+
+  .prev-text {
+    right: auto;
+    left: 35%;
+  }
+
+  /* Single-photo custom post */
+  .related_text {
+    text-align: center;
+  }
+
+  .photo_block {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  /* Lightbox */
+  .lightbox-content img {
+    height: 70vh;
+  }
+  /* Single-photo custom post */
+  .photo_block {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

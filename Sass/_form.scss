@@ -1,0 +1,72 @@
+/*Formulaire de contact*/
+/*Positionnement du formulaire*/
+.wpcf7 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 585px;
+  p {
+    margin: 0;
+  }
+}
+
+/*Styles des champs*/
+.wpcf7 .form input[type="text"] {
+  font-family: Poppins;
+  font-size: 12px;
+  border-radius: 5px;
+  border-color: #b8bbc2;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  width: 263px;
+  height: 40px;
+}
+
+.wpcf7 .form input[type="email"] {
+  font-family: Poppins;
+  font-size: 12px;
+  color: #000;
+  border-radius: 5px;
+  border-color: #b8bbc2;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  width: 263px;
+  height: 40px;
+}
+
+.wpcf7 .form textarea {
+  font-family: Poppins;
+  font-size: 12px;
+  color: #000;
+  border-radius: 5px;
+  border-color: #b8bbc2;
+  border-width: 1px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 263px;
+  height: 210px;
+}
+
+/*Styles des labels*/
+.wpcf7-form label {
+  font-family: Poppins;
+  font-size: 12px;
+}
+
+/*Bouton "Envoyer"*/
+.wpcf7 .form input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  font-family: SpaceMono;
+  font-size: 12px;
+  width: 268px;
+  height: 50px;
+  background-color: #d8d8d8;
+  border-style: unset;
+}

@@ -1,0 +1,158 @@
+.single_photo {
+  display: flex;
+  justify-content: center;
+}
+
+.single_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 44%;
+  border-bottom: 1px solid black;
+  margin-right: 18px;
+  .single_title {
+    max-width: 400px;
+  }
+  h2 {
+    font-family: SpaceMono;
+    word-spacing: -0.3em;
+    font-size: 66px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 66px;
+    margin-bottom: 0;
+  }
+}
+
+.single_info {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 38px;
+  }
+  p {
+    font-family: SpaceMono;
+    font-size: 14px;
+    margin-left: 0;
+    font-weight: 400;
+    margin-top: 19px;
+    text-transform: uppercase;
+  }
+}
+
+.single_img {
+  width: 50%;
+  height: auto;
+}
+
+.single_img img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.single_contact {
+  display: flex;
+  height: 118px;
+  border-bottom: 1px solid black;
+  margin-left: 25px;
+  margin-right: 25px;
+  p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    margin: auto 6px;
+  }
+}
+
+.btn_contact {
+  width: 272px;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  background-color: #d8d8d8;
+  font-family: SpaceMono;
+  font-size: 12px;
+  margin-left: 33px;
+  margin-top: 35px;
+}
+
+.related_text {
+  font-family: SpaceMono;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 0;
+  padding-top: 83px;
+}
+
+.photo_related {
+  margin-bottom: 90px;
+}
+
+.slider {
+  margin-left: auto;
+  position: relative;
+  .nav_slide {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  .arrow_slide {
+    width: 25px;
+    margin-top: 87px;
+    padding-left: 27px;
+    padding-right: 8px;
+  }
+}
+
+.slider {
+  position: relative;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    .thumb_slide_prev {
+      display: block;
+    }
+  }
+}
+
+.slider {
+  a:hover {
+    .thumb_slide_next {
+      display: block;
+    }
+  }
+}
+
+.thumb_slide_next,
+.thumb_slide_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.thumb_slide_next {
+  position: absolute;
+  display: none;
+  width: 81px;
+  height: 71px;
+  object-fit: cover;
+  top: 0;
+  left: calc(35% + 27px);
+  transform: translate(-50%);
+}
+.thumb_slide_prev {
+  position: absolute;
+  display: none;
+  width: 81px;
+  height: 71px;
+  object-fit: cover;
+  top: 0;
+  left: calc(35% + 27px);
+  transform: translate(-50%);
+}

@@ -1,0 +1,76 @@
+/*
+Theme Name: motaphoto
+Theme URI: http://localhost/motaphoto/
+Author: Magali Bonnard
+Author URI: http://localhost/motaphoto/
+Description: Thème pour la photographe Nathalie Mota
+Requires at least: WordPress 6.0
+Version: 1.0
+Tags: Nathalie Mota, Photographe Event
+Text Domain: motaphoto
+*/
+@import "_font", "_menu", "_modale", "_form", "_single_photo", "_photo_block",
+  "_lightbox", "_filters", "_media-queries";
+
+body {
+  margin: 0;
+}
+
+/* Hero */
+#hero {
+  margin-bottom: 77px;
+  .hero_photo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    h1 {
+      font-family: SpaceMono;
+      font-size: 6rem;
+      font-weight: 700;
+      line-height: 5rem;
+      -webkit-text-stroke: 3px white;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+/* Page "Vie Privée" et "Mentions Légales" */
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-block {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 25px 30px 25px;
+}
+
+.page-title {
+  font-family: SpaceMono;
+  font-size: 25px;
+  font-weight: 600;
+  color: #e00000;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.page-h2 {
+  font-family: SpaceMono;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.page-p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}

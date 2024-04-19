@@ -1,0 +1,127 @@
+#filters {
+  max-width: 1148px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.filter-group1 {
+  display: flex;
+  gap: 34px;
+}
+
+.filter-group2 {
+  display: flex;
+}
+
+///// Utilisation de Select 2 pour styliser les filtres /////
+.select2-container {
+  width: auto !important;
+}
+
+.select2-selection--single {
+  width: 260px;
+  height: 43px !important;
+  padding-left: 18px;
+  background: url("./assets/images/dropdown.png") 92%/8% no-repeat;
+}
+
+.select2-container--default .select2-selection--single {
+  border-radius: 10px !important;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #b8bbc2 !important;
+  margin: 0 auto !important;
+  &:hover {
+    border: 1px solid #215aff !important;
+  }
+}
+
+.select2-container--default.select2-container--open.select2-container--below
+  .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below
+  .select2-selection--multiple {
+  border: 1px solid #215aff !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  box-shadow: 0 8px 10px 0 rgba(166, 165, 165, 0.3);
+}
+
+.select2-dropdown {
+  border: 1px solid #f2f1f1 !important;
+  box-shadow: 0 8px 10px 0 rgba(144, 143, 143, 0.3);
+  padding-top: 25px;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: black !important;
+  line-height: 3.5 !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  display: none;
+}
+
+.select2-search--dropdown {
+  padding: 0 !important;
+}
+
+.select2-search__field {
+  display: none;
+}
+
+.select2-container--default .select2-results__option {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 24px;
+}
+.select2-container--default .select2-results__option--disabled {
+  display: none;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: #e00000 !important;
+  color: white !important;
+}
+
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #fe5858 !important;
+}
+
+///// Bouton "charger plus" /////
+#load-more {
+  display: flex;
+  justify-content: center;
+}
+
+#load-more-button {
+  width: 272px;
+  height: 50px;
+  background-color: #d8d8d8;
+  border: none;
+  margin-bottom: 36px;
+  margin-top: 36px;
+  cursor: pointer;
+}
+
+#load-more-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.load-more-text {
+  font-family: SpaceMono;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 auto;
+}
